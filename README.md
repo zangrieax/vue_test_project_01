@@ -1,4 +1,4 @@
-# vue-router-vuex-example
+# test vue project
 
 ![npm][npm-version-image]
 [![Dependency Status][dep-image]][dep-url]
@@ -6,7 +6,7 @@
 
 > Vue + vue-router + vuex + webpack starter project
 
-This repository was created to demonstrate a simple application that uses vue and vue-router-sync to pass data throughout the application using the state management pattern.
+Верстал быстро, без адаптивной верстки
 
 ## Requirements
 The following tools are required to get this running.
