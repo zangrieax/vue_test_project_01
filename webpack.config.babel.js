@@ -39,12 +39,10 @@ module.exports = {
 			},
 			{
 				test: /\.vue$/,
-				loader: "vue-loader",
+				loader: 'vue-loader',
 				options: {
-					loaders: {
-						sass: "vue-style-loader!css-loader!sass-loader",
-					},
-				},
+					postcss: [require('postcss-cssnext')()]
+				}
 			},
 			{
 				test: /\.js$/,
@@ -58,14 +56,10 @@ module.exports = {
 					name: "[name].[ext]?[hash]",
 				},
 			},
+
 		],
 	},
-	resolve: {
-		alias: {
-			vue$: "vue/dist/vue.common.js",
-			styles: path.resolve(__dirname, "src/scss"),
-		},
-	},
+
 	devServer: {
 		historyApiFallback: true,
 	},
